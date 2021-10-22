@@ -7,15 +7,52 @@
   --font-size: 24px;
 }
 
+/* National Park Typeface: https://nationalparktypeface.com/ */
+/* this font is published under SIL Open Font License: https://nationalparktypeface.com/License */
+@font-face {
+    font-family: 'National Park';
+    src: url('fonts/NationalPark-Regular.woff2') format('woff2'),
+        url('fonts/NationalPark-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park';
+    src: url('fonts/NationalPark-Thin.woff2') format('woff2'),
+        url('fonts/NationalPark-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'National Park';
+    src: url('fonts/NationalPark-Heavy.woff2') format('woff2'),
+        url('fonts/NationalPark-Heavy.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
   background-color: var(--color-four);
   font-size: var(--font-size);
   margin: auto;
   width: var(--width);
+  font-family: 'National Park';
+  text-transform: lowercase;
+  font-weight: normal;
+  font-style: normal;
 }
 
 body h1 {
   margin-bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase;
 }
 
 body input {
@@ -60,6 +97,11 @@ body #success svg {
   width: var(--width);
   height: auto;
 }
+
+body #success svg text {
+  text-transform: none;
+}
+
 body #success span {
   display: inline-block;
 }
