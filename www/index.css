@@ -3,13 +3,14 @@
   --color-two: #9D84B7;
   --color-three: #D5D5D5;
   --color-four: #B2F9FC;
+  --width: min(100vw, 360px);
 }
 
 body {
   background-color: var(--color-four);
   font-size: 24px;
   margin: auto;
-  max-width: 360px;
+  width: var(--width);
 }
 
 body h1 {
@@ -52,6 +53,14 @@ body #success {
   line-height: 100vh;
   opacity: 0.9;
   transition: opacity 8s ease;
+}
+
+body #success svg {
+  width: var(--width);
+  height: auto;
+}
+body #success span {
+  display: inline-block;
 }
 
 body #success-checkbox {
