@@ -126,3 +126,29 @@ input:checked + .list-item > svg:nth-of-type(1) {
   height: var(--font-size);
   top: 4px;
 }
+
+input:not(:checked) ~ #reset {
+  display: none;
+}
+
+#reset {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border: none;
+  background: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+#reset > * {
+  margin: auto;
+}
+
+#reset svg {
+  width: 32px;
+}
