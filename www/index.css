@@ -15,7 +15,7 @@
         url('fonts/NationalPark-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -24,7 +24,7 @@
         url('fonts/NationalPark-Thin.woff') format('woff');
     font-weight: 100;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 @font-face {
@@ -33,7 +33,7 @@
         url('fonts/NationalPark-Heavy.woff') format('woff');
     font-weight: 900;
     font-style: normal;
-    font-display: swap;
+    font-display: fallback;
 }
 
 body {
@@ -49,6 +49,11 @@ body {
 
 body h1 {
   margin-bottom: 0;
+}
+
+body h2 {
+  margin-bottom: 0;
+  font-size: 1.2em;
 }
 
 h1, h2, h3, h4, h5, h6 {
