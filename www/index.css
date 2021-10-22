@@ -1,9 +1,10 @@
-::root {
+:root {
   --color-one: #091353;
   --color-two: #9D84B7;
   --color-three: #D5D5D5;
   --color-four: #B2F9FC;
 }
+
 body {
   background-color: var(--color-four);
 }
@@ -11,4 +12,8 @@ body {
 body label::after {
   content: "\A";
   white-space: pre;
+}
+
+body input:not(:checked) ~ #success {
+  display:none
 }
