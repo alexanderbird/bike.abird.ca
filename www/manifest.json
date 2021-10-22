@@ -1,0 +1,19 @@
+{
+  "short_name": "Pre-Ride",
+  "name": "Pre-Ride Checklist",
+  "icons": [
+    {
+      "src": "https://bike.abird.ca/images/icon.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#B2F9FC",
+  "display": "fullscreen",
+  "scope": "/",
+  "theme_color": "#091353",
+  "shortcuts": [],
+  "description": "Stuff to bring on my ride",
+  "screenshots": []
+}
