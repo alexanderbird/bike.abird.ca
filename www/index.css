@@ -45,6 +45,7 @@ body {
   text-transform: lowercase;
   font-weight: normal;
   font-style: normal;
+  padding-bottom: 64px;
 }
 
 body h1 {
