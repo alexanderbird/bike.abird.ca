@@ -1,0 +1,20 @@
+{
+  "name": "bike.abird.ca",
+  "version": "1.0.0",
+  "description": "A micro site for resources related to my biking",
+  "main": "index.js",
+  "scripts": {
+    "build": "mkdir -p www && rm -rf www && mkdir -p www && cp -r static www && node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexanderbird/bike.abird.ca.git"
+  },
+  "author": "Alexander Bird <alex@alexanderbird.software>",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/alexanderbird/bike.abird.ca/issues"
+  },
+  "homepage": "https://github.com/alexanderbird/bike.abird.ca#readme"
+}
