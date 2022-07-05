@@ -4,7 +4,8 @@
   "description": "A micro site for resources related to my biking",
   "main": "index.js",
   "scripts": {
-    "build": "mkdir -p www && rm -rf www && mkdir -p www && cp -r static www && node build.js",
+    "start": "netlify dev",
+    "build": "mkdir -p www && rm -rf www && mkdir -p www && cp -r static/* www && babel-node build.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,5 +17,15 @@
   "bugs": {
     "url": "https://github.com/alexanderbird/bike.abird.ca/issues"
   },
-  "homepage": "https://github.com/alexanderbird/bike.abird.ca#readme"
+  "homepage": "https://github.com/alexanderbird/bike.abird.ca#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.6",
+    "@babel/core": "^7.18.6",
+    "@babel/node": "^7.18.6",
+    "@babel/plugin-transform-react-jsx": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "netlify-cli": "^10.7.1",
+    "preact": "^10.8.2",
+    "preact-render-to-string": "^5.2.0"
+  }
 }

@@ -1,5 +1,9 @@
 # bike.abird.ca
 
+## Updating Content
+
+Add maintenance notes in `./maintenance_log.yaml` to update the `/specs` page.
+
 ## Architecture
 
 ### Build
