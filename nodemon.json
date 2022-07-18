@@ -1,0 +1,8 @@
+{
+  "exec": "npm run build",
+  "ext": "*.*",
+  "watch": [
+    "src",
+    "static"
+  ]
+}
