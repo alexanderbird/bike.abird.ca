@@ -1,15 +1,16 @@
 - date: 2022-06-22
-  part: rear-wheel
-  note: inspected at IMBY: mostly in true, but tire has failed. Maybe I'll get another season out of it.
+  component: rear-tire
+  note: >
+    inspected at IMBY: mostly in true, but tire has failed. Maybe I'll get another season out of it.
 - date: 2022-06-29
-  part: front-brake-rotor
+  component: front-brake-rotor
   note: install 203mm Shimano something something (something about the spacer)
   latest: true
 - date: 2022-06-29
-  part: front-brake-caliper
+  component: front-brake-caliper
   note: install Shimano SLX M7120 DT 4 Pistons Postmount Disc Brake Caliper
   latest: true
 - date: 2022-06-29
-  part: front-brake-hose
+  component: brake-hose
   note: install new hose
   latest: true

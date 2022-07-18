@@ -3,6 +3,7 @@
   "ext": "*.*",
   "watch": [
     "src",
-    "static"
+    "static",
+    "maintenance_log.yaml"
   ]
 }
