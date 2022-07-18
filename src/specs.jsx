@@ -10,18 +10,20 @@ export const Specs = () => (
   <html>
     <head>
       <title>Specs</title>
+      <link rel='stylesheet' href='css/specs.css' />
     </head>
     <body>
-      <h3>Hello, World</h3>
-      <a href="https://ca.bikes.com/products/growler-40-21?variant=41078688776355">2021 Growler 40</a>
-      <ul>
-        { components.map(component => (
-          <li>
-            { component }
-            <img style="width: 50px;" src={`/images/components/${component}.svg`} />
-          </li>
-        ))}
-      </ul>
+      <article>
+        <h3><a href="https://ca.bikes.com/products/growler-40-21?variant=41078688776355">2021 Growler 40</a></h3>
+        <div class='component-tile-container'>
+          { components.map(component => (
+            <div class='component-tile'>
+              { component }
+              <img src={`/images/components/${component}.svg`} />
+            </div>
+          ))}
+        </div>
+      </article>
     </body>
   </html>
 );
