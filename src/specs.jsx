@@ -1,7 +1,10 @@
 import * as fs from 'fs';
 import { h } from 'preact';
 
-const components = fs.readFileSync(__dirname + '/components.txt', 'utf-8').split('\n');
+const components = fs.readFileSync(__dirname + '/components.txt', 'utf-8')
+  .split('\n')
+  .map(x => x.trim())
+  .filter(x => !!x);
 
 export const Specs = () => (
   <html>
