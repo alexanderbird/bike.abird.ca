@@ -1,10 +1,6 @@
 import * as fs from 'fs';
 import { h } from 'preact';
-
-const components = fs.readFileSync(__dirname + '/components.txt', 'utf-8')
-  .split('\n')
-  .map(x => x.trim())
-  .filter(x => !!x);
+import components from './components.json';
 
 export const Specs = () => (
   <html>
@@ -18,8 +14,8 @@ export const Specs = () => (
         <div class='component-tile-container'>
           { components.map(component => (
             <div class='component-tile'>
-              { component }
-              <img src={`/images/components/${component}.svg`} />
+              <h4>{ component.title }</h4>
+              <img src={`/images/components/${component.slug}.svg`} />
             </div>
           ))}
         </div>

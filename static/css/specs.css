@@ -34,3 +34,7 @@ body {
   width: 90%;
   margin: 0 auto;
 }
+
+.component-tile h4 {
+  text-align: center;
+}
