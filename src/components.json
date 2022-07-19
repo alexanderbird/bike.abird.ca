@@ -1,8 +1,6 @@
 [
   { "group": "Core",        "slug": "frame", "title": "Frame" },
   { "group": "Core",        "slug": "fork", "title": "Fork" },
-  { "group": "Core",        "slug": "seatpost", "title": "Seatpost" },
-  { "group": "Core",        "slug": "saddle", "title": "Saddle" },
   { "group": "Drive Train", "slug": "derailleur-hanger", "title": "Derailleur Hanger" },
   { "group": "Drive Train", "slug": "cassette", "title": "Cassette" },
   { "group": "Drive Train", "slug": "derailleur", "title": "Derailleur" },
@@ -22,6 +20,8 @@
   { "group": "Front Wheel", "slug": "front-rim", "title": "Rim" },
   { "group": "Front Wheel", "slug": "front-hub", "title": "Hub" },
   { "group": "Front Wheel", "slug": "front-tire", "title": "Tire" },
-  { "group": "Cockpit",     "slug": "handlebar", "title": "Handlebar" },
-  { "group": "Cockpit",     "slug": "grips", "title": "Grips" }
+  { "group": "Cockpit & Seat", "slug": "handlebar", "title": "Handlebar" },
+  { "group": "Cockpit & Seat", "slug": "grips", "title": "Grips" },
+  { "group": "Cockpit & Seat", "slug": "seatpost", "title": "Seatpost" },
+  { "group": "Cockpit & Seat", "slug": "saddle", "title": "Saddle" }
 ]
