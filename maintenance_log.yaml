@@ -21,8 +21,7 @@
     - { component: rear-brake-rotor, remark: "Factory part: 180mm Rotor" }
     - { component: shifter, remark: "Factory part: Shimano Deore 12spd" }
     - { component: derailleur, remark: "Factory part: Shimano Deore 12spd" }
-    - { component: cranks, remark: "Factory part: Shimano Deore 12spd 30T" }
-    - { component: chainring, remark: "Factory part: Shimano Deore 12spd 30T" }
+    - { component: cranks-and-chainring, remark: "Factory part: Shimano Deore 12spd 30T" }
     - { component: cassette, remark: "Factory part: Shimano Deore 10-51T 12spd" }
     - { component: chain, remark: "Factory part: Shimano M6100" }
     - { component: front-hub, remark: "Factory part: Shimano MT410 | 15mm Boost" }

@@ -29,18 +29,24 @@ body {
   flex-direction: column;
   align-content: center;
   padding: 12px;
+  position: relative;
 }
 
-.component-tile h4 img {
+.component-tile h2 {
+  margin: -12px -12px 0 -12px;
+  padding: 12px;
+  background-color: #6112;
+  text-align: center;
+}
+.component-tile h3 img {
   width: 5em;
+}
+.component-tile h3 span {
+  line-height: 5em;
   margin-right: auto;
 }
-.component-tile h4 span {
-  margin-left: auto;
-  line-height: 5em;
-}
 
-.component-tile h4 {
+.component-tile h3 {
   display: flex;
   flex-direction: row;
   justify-content: space-around;

@@ -21,6 +21,12 @@ if (unknownComponents.length) {
   throw new Error(`Maintenance log contains unknown components: ${unknownComponents}`);
 }
 
+const componentGroups = Object.values(components.reduce((all, one) => {
+  all[one.group] = all[one.group] || { title: one.group, components: [] };
+  all[one.group].components.push(one);
+  return all;
+}, {}));
+
 export const Specs = () => (
   <html>
     <head>
@@ -29,22 +35,27 @@ export const Specs = () => (
     </head>
     <body>
       <article>
-        <h3>2021 Growler 40</h3>
+        <h1>2021 Growler 40</h1>
         <div class='component-tile-container'>
-          { components.map(component => (
+          { componentGroups.map(group => (
             <div class='component-tile'>
-              <h4>
-                <span>{ component.title }</span>
-                <img src={`/images/components/${component.slug}.svg`} />
-              </h4>
-              <ul>
-                { (maintenanceLogByComponent[component.slug] || []).map(entry => (
-                  <li>
-                    <span class='component-tile__item-date'>{entry.date.toISOString().slice(0, 10)}</span>
-                    <span>{entry.remark}</span>
-                  </li>
-                ))}
-              </ul>
+              <h2>{group.title}</h2>
+              { group.components.map(component => (
+              <div>
+                <h3>
+                  <img src={`/images/components/${component.slug}.svg`} />
+                  <span>{ component.title }</span>
+                </h3>
+                <ul>
+                  { (maintenanceLogByComponent[component.slug] || []).map(entry => (
+                    <li>
+                      <span class='component-tile__item-date'>{entry.date.toISOString().slice(0, 10)}</span>
+                      <span>{entry.remark}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              ))}
             </div>
           ))}
         </div>
