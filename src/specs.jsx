@@ -35,32 +35,30 @@ export const Specs = () => (
       <meta name='viewport' content='width=device-width, initial-scale=1' />
     </head>
     <body>
-      <article>
-        <h1>2021 Growler 40</h1>
-        <div class='component-tile-container'>
-          { componentGroups.map(group => (
-            <div class='component-tile'>
-              <h2>{group.title}</h2>
-              { group.components.map(component => (
-              <div>
-                <h3>
-                  <img src={`/images/components/${component.slug}.svg`} />
-                  <span>{ component.title }</span>
-                </h3>
-                <ul>
-                  { (maintenanceLogByComponent[component.slug] || []).map(entry => (
-                    <li>
-                      <span class='component-tile__item-date'>{entry.date.toISOString().slice(0, 10)}</span>
-                      <span>{entry.remark}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              ))}
+      <h1>2021 Growler 40</h1>
+      <div class='component-tile-container'>
+        { componentGroups.map(group => (
+          <div class='component-tile'>
+            <h2>{group.title}</h2>
+            { group.components.map(component => (
+            <div>
+              <h3>
+                <img src={`/images/components/${component.slug}.svg`} />
+                <span>{ component.title }</span>
+              </h3>
+              <ul>
+                { (maintenanceLogByComponent[component.slug] || []).map(entry => (
+                  <li>
+                    <span class='component-tile__item-date'>{entry.date.toISOString().slice(0, 10)}</span>
+                    <span>{entry.remark}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
-          ))}
-        </div>
-      </article>
+            ))}
+          </div>
+        ))}
+      </div>
     </body>
   </html>
 );
