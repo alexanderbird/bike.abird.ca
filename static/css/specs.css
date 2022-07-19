@@ -28,13 +28,25 @@ body {
   display: flex;
   flex-direction: column;
   align-content: center;
+  padding: 12px;
 }
 
-.component-tile img {
-  width: 90%;
-  margin: 0 auto;
+.component-tile h4 img {
+  width: 5em;
+  margin-right: auto;
+}
+.component-tile h4 span {
+  margin-left: auto;
+  line-height: 5em;
 }
 
 .component-tile h4 {
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.component-tile__item-date {
+  color: gray;
+  margin-right: 1em;
 }

@@ -1,16 +1,38 @@
 - date: 2022-06-22
-  component: rear-tire
-  note: >
-    inspected at IMBY: mostly in true, but tire has failed. Maybe I'll get another season out of it.
+  remarks:
+    - component: rear-tire
+      remark: >
+        inspected at IMBY: the wheel is mostly in true, but tire has failed. Maybe I'll get another season out of it.
 - date: 2022-06-29
-  component: front-brake-rotor
-  note: install 203mm Shimano something something (something about the spacer)
-  latest: true
-- date: 2022-06-29
-  component: front-brake-caliper
-  note: install Shimano SLX M7120 DT 4 Pistons Postmount Disc Brake Caliper
-  latest: true
-- date: 2022-06-29
-  component: brake-hose
-  note: install new hose
-  latest: true
+  remarks:
+    - component: front-brake-rotor
+      remark: install 203mm Shimano something something (something about the spacer)
+    - component: front-brake-caliper
+      remark: install Shimano SLX M7120 DT 4 Pistons Postmount Disc Brake Caliper (and new hose)
+- date: 2021-05-30
+  remarks:
+    - { component: frame, remark: "Rocky Mountain Growler 40 (2021). https://ca.bikes.com/products/growler-40-21?variant=41078688776355" }
+    - { component: fork, remark: "Factory part: Suntour Raidon 34 LOR Air Boost 140mm" }
+    - { component: handlebar, remark: "Factory part: Rocky Mountain AM 800mm" }
+    - { component: grips, remark: "Factory part: Rocky Mountain Lock On Light" }
+    - { component: front-brake-caliper, remark: "Factory part: Tektro HD-M285" }
+    - { component: front-brake-rotor, remark: "Factory part: 180mm Rotor" }
+    - { component: rear-brake-caliper, remark: "Factory part: Tektro HD-M285" }
+    - { component: rear-brake-rotor, remark: "Factory part: 180mm Rotor" }
+    - { component: shifter, remark: "Factory part: Shimano Deore 12spd" }
+    - { component: derailleur, remark: "Factory part: Shimano Deore 12spd" }
+    - { component: cranks, remark: "Factory part: Shimano Deore 12spd 30T" }
+    - { component: chainring, remark: "Factory part: Shimano Deore 12spd 30T" }
+    - { component: cassette, remark: "Factory part: Shimano Deore 10-51T 12spd" }
+    - { component: chain, remark: "Factory part: Shimano M6100" }
+    - { component: front-hub, remark: "Factory part: Shimano MT410 | 15mm Boost" }
+    - { component: rear-hub, remark: "Factory part: Shimano MT410 Boost 148mm" }
+    - { component: front-rim, remark: "Factory part: WTB ST i30 TCS 2.0 Tubeless / Tubeless Ready - Tape / Valves Incl" }
+    - { component: rear-rim, remark: "Factory part: WTB ST i30 TCS 2.0 Tubeless / Tubeless Ready - Tape / Valves Incl" }
+    - { component: front-tire, remark: "Factory part: WTB Vigilante TCS Light High Grip Tri-Tec 29 x 2.6" }
+    - { component: rear-tire, remark: "Factory part: WTB Trail Boss G2 TCS Light Fast Rolling Tri-Tec 29 x 2.6" }
+    - { component: seatpost, remark: "Factory part: Rocky Mountain Toonie Drop Alloy | 30.9mm" }
+    - { component: saddle, remark: "Factory part: WTB Volt 142" }
+    - { component: pedals, remark: "RaceFace Chester (blue) (from my old bike)" }
+    - { component: derailleur-hanger, remark: "Factory part: hanger 1098053ANJ" }
+

@@ -3,7 +3,7 @@
   { "slug": "cassette", "title": "Cassette" },
   { "slug": "derailleur", "title": "Derailleur" },
   { "slug": "chain", "title": "Chain" },
-  { "slug": "crank", "title": "Crank" },
+  { "slug": "cranks", "title": "Cranks" },
   { "slug": "chainring", "title": "Chainring" },
   { "slug": "pedals", "title": "Pedals" },
   { "slug": "frame", "title": "Frame" },
@@ -16,13 +16,12 @@
   { "slug": "rear-tire", "title": "Rear Wheel: Tire" },
   { "slug": "rear-brake-rotor", "title": "Rear Brake: Rotor" },
   { "slug": "rear-brake-caliper", "title": "Rear Brake: Caliper" },
-  { "slug": "brake-hose", "title": "Brake Hose" },
   { "slug": "front-rim", "title": "Front Wheel: Rim" },
   { "slug": "front-hub", "title": "Front Wheel: Hub" },
   { "slug": "front-tire", "title": "Front Wheel: Tire" },
   { "slug": "front-brake-rotor", "title": "Front Brake: Rotor" },
   { "slug": "front-brake-caliper", "title": "Front Brake: Caliper" },
   { "slug": "saddle", "title": "Saddle" },
-  { "slug": "handlebars", "title": "Handlebars" },
+  { "slug": "handlebar", "title": "Handlebar" },
   { "slug": "grips", "title": "Grips" }
 ]
