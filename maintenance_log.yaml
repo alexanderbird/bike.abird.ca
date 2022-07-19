@@ -1,3 +1,23 @@
+- date: 2099-01-01
+  remarks:
+    - component: cranks-and-chainring
+      remark: updated beacuse the old one broke off
+    - component: pedals
+      remark: updated to red
+    - component: fork
+      remark: serviced
+    - component: chain
+      remark: replaced 3 times or so
+    - component: derailleur
+      remark: replaced once
+    - component: derailleur-hanger
+      remark: replaced many times
+    - component: front-brake-lever
+      remark: replaced
+    - component: rear-brake-lever
+      remark: replaced
+    - component: cassette
+      remark: replaced
 - date: 2022-06-22
   remarks:
     - component: rear-tire
@@ -9,8 +29,14 @@
       remark: install 203mm Shimano something something (something about the spacer)
     - component: front-brake-caliper
       remark: install Shimano SLX M7120 DT 4 Pistons Postmount Disc Brake Caliper (and new hose)
+- date: 2021-12-22
+  remarks:
+    - component: rear-tire
+      remark: replaced with Maxxis something something
 - date: 2021-05-30
   remarks:
+    - { component: front-brake-lever, remark: "Original lever" }
+    - { component: rear-brake-lever, remark: "Original lever" }
     - { component: frame, remark: "Rocky Mountain Growler 40 (2021). https://ca.bikes.com/products/growler-40-21?variant=41078688776355" }
     - { component: fork, remark: "Factory part: Suntour Raidon 34 LOR Air Boost 140mm" }
     - { component: handlebar, remark: "Factory part: Rocky Mountain AM 800mm" }
