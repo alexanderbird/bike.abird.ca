@@ -28,6 +28,7 @@ h1 {
 
 .component-tile {
   --padding: 12px;
+  padding: var(--padding);
   scroll-snap-align: center;
   flex-basis: var(--tile-width);
   flex-grow: 0;
@@ -39,7 +40,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-content: center;
-  padding: var(--padding);
   position: relative;
   --initial-scroll-offset: calc(50% - (0.5 * var(--tile-width)) - var(--tile-gap));
 }
@@ -73,7 +73,20 @@ h1 {
   justify-content: space-around;
 }
 
+.component-tile ul {
+  padding-left: var(--padding);
+  list-style-type: none;
+}
+
 .component-tile__item-date {
   color: gray;
-  margin-right: 1em;
+}
+
+.component-tile__item-date:before {
+  content: '[';
+}
+
+.component-tile__item-date:after {
+  content: ']';
+  margin-right: 4px;
 }
