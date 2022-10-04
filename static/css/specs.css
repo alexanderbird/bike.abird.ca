@@ -80,6 +80,8 @@ h1 {
 
 .component-tile__item-date {
   color: gray;
+  display: inline-block;
+  min-width: 6.5rem;
 }
 
 .component-tile__item-date:before {

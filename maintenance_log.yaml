@@ -1,23 +1,21 @@
 - date: 2099-01-01
   remarks:
-    - component: cranks-and-chainring
-      remark: updated beacuse the old one broke off
-    - component: pedals
-      remark: updated to red
-    - component: fork
-      remark: serviced
     - component: chain
-      remark: replaced 3 times or so
+      remark: replaced 3 times or so in total
     - component: derailleur
       remark: replaced once
     - component: derailleur-hanger
       remark: replaced many times
-    - component: front-brake-lever
-      remark: replaced
-    - component: rear-brake-lever
-      remark: replaced
-    - component: cassette
-      remark: replaced
+- date: 2022-10-01
+  remarks:
+    - component: cranks-and-chainring
+      remark: install Affect R cranks with 30t chainring (620g)
+    - component: rear-brake-rotor
+      remark: worn out; replaced with 203mm rotor with the SM-MA-F203P/PMA adapter
+- date: 2022-09-29
+  remarks:
+    - component: cranks-and-chainring
+      remark: crank arm worked itself off twice (replaced it once, then three rides later it came off again)
 - date: 2022-06-22
   remarks:
     - component: rear-tire
@@ -29,10 +27,40 @@
       remark: install 203mm Shimano something something (something about the spacer)
     - component: front-brake-caliper
       remark: install Shimano SLX M7120 DT 4 Pistons Postmount Disc Brake Caliper (and new hose)
+- date: 2022-05-28
+  remarks:
+    - component: pedals
+      remark: Axle bent; replaced with RaceFace Chester Red
+- date: 2022-04-12
+  remarks:
+    - component: cassette
+      remark: Kinetik installed CS-M7100 SLX 12spd 10-51T
+    - component: chain
+      remark: Replace with CN-M8100 XT 12spd 126L
+    - component: rear-rim
+      remark: wheel true at Kinetik
+- date: 2022-04-03
+  remarks:
+    - component: derailleur-hanger
+      remark: replaced (1098053ANJ)
+- date: 2022-01-26
+  remarks:
+    - component: cranks-and-chainring
+      remark: crank arm fell off while riding Flow. Replaced crankset with Shimano FC-M6100-1 52/142-148mm Deore 1x12spd boost 30t 170mm
 - date: 2021-12-22
   remarks:
     - component: rear-tire
-      remark: replaced with Maxxis something something
+      remark: replaced with Maxxis DHF 29x2.6K WT 3C Maxx Terra EXO+ TR
+- date: 2021-10-29
+  remarks:
+    - component: front-brake-lever
+      remark: replaced to match rear (Shimano BL/BR-MT200 Left/Front)
+    - component: rear-brake-lever
+      remark: replaced because lever was leaking mineral oil (Shimano BL/BR-MT200 Right/Rear)
+    - component: fork
+      remark: 50hr fork servicing (Kinetik)
+    - component: chain
+      remark: replaced with Shimano CN-M7100 SLX 12spd 126L
 - date: 2021-05-30
   remarks:
     - { component: front-brake-lever, remark: "Original lever" }

@@ -3,8 +3,45 @@ import * as path from 'path';
 import { h } from 'preact';
 import components from './components.json';
 import * as yaml from 'js-yaml';
+import { validate } from 'jsonschema';
 
 const maintenanceLog = yaml.load(fs.readFileSync(path.join(__dirname, '../maintenance_log.yaml'), 'utf-8'));
+const knownComponents = [...new Set(components.map(x => x.slug))];
+const logSchema = {
+  type: "array",
+  items: {
+    type: "object",
+    additionalProperties: false,
+    required: [ "date", "remarks" ],
+    properties: {
+      date: { type: "date" },
+      remarks: {
+        type: "array",
+        items: {
+          type: "object",
+          additionalProperties: false,
+          required: [ "component", "remark" ],
+          properties: {
+            component: {
+              type: "string",
+              enum: knownComponents
+            },
+            remark: { type: "string" }
+          }
+        }
+      }
+    }
+  }
+}
+const validationResult = validate(maintenanceLog, logSchema, { required: true });
+if (!validationResult.valid) {
+  console.error("The maintenance log is incorrectly structured.");
+  validationResult.errors.forEach(error => {
+    const context = error.path.reduce((result, path) => result[path], maintenanceLog);
+    console.error(context, `${error.message} (${error.property})`);
+  });
+  throw new Error("The maintenance log is incorrectly structured. See details above.");
+}
 
 const maintenanceLogByComponent = maintenanceLog
   .reduce((grouped, day) => {
@@ -14,12 +51,6 @@ const maintenanceLogByComponent = maintenanceLog
     });
     return grouped;
   }, {});
-
-const knownComponents = new Set(components.map(x => x.slug));
-const unknownComponents = Object.keys(maintenanceLogByComponent).filter(x => !knownComponents.has(x));
-if (unknownComponents.length) {
-  throw new Error(`Maintenance log contains unknown components: ${unknownComponents}`);
-}
 
 const componentGroups = Object.values(components.reduce((all, one) => {
   all[one.group] = all[one.group] || { title: one.group, components: [] };
